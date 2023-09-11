@@ -25,7 +25,7 @@ const Blogs = () => {
   },[]);
   return (
     <div className="w-2/3">
-      <h3>Blogs:</h3>
+      <h3>Blogs:{blogs.length}</h3>
       {
         blogs && blogs.map((blog)=> <Blog key={blog.id} blog={blog}></Blog>)
       }
